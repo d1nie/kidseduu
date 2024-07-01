@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Intermediate.xsl"?>
+
+<intermediatelist>
+	<Intermediate>
+		<No.>1.</No.>
+		<Name>Chloe Miller</Name>
+		<Age>6</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>2.</No.>
+		<Name>Penelope Lee</Name>
+		<Age>5</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>3.</No.>
+		<Name>Chloe Walker</Name>
+		<Age>4</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>4.</No.>
+		<Name>Sophia Khan</Name>
+		<Age>4</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>5.</No.>
+		<Name>Ethan Brown</Name>
+		<Age>6</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>6.</No.>
+		<Name>William Chen</Name>
+		<Age>3</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>7.</No.>
+		<Name>Penelope Patel</Name>
+		<Age>6</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>8.</No.>
+		<Name>Daniel Khan</Name>
+		<Age>5</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>9.</No.>
+		<Name>Charlotte Patel</Name>
+		<Age>4</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>10.</No.>
+		<Name>David Yang</Name>
+		<Age>5</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>11.</No.>
+		<Name>Noah Kim</Name>
+		<Age>4</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>12.</No.>
+		<Name>William Kim</Name>
+		<Age>4</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>13.</No.>
+		<Name>Emily Cruz</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>14.</No.>
+		<Name>Daniel Thomas</Name>
+		<Age>4</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>15.</No.>
+		<Name>Emily Yang</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>16.</No.>
+		<Name>Omar Kim</Name>
+		<Age>4</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>17.</No.>
+		<Name>Charlotte Lewis</Name>
+		<Age>4</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>18.</No.>
+		<Name>Penelope Yang</Name>
+		<Age>6</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>19.</No.>
+		<Name>William Kim</Name>
+		<Age>4</Age>
+		<Gender>Male</Gender>
+	</Intermediate>
+	
+	<Intermediate>
+		<No.>20.</No.>
+		<Name>Charlotte Patel</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Intermediate>
+
+</intermediatelist>

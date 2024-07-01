@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Practice - ABC Learning</title>
+    <link rel="stylesheet" href="css/style_type.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+            body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-image: url(background/1.png);
+      background-size: cover;
+    }
+        header {
+        background-color: #C8A2C8; /* Lilac */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      header h1 {
+  height: 50px;
+  margin: 0;
+  justify-content: center;
+  color: #006400;
+}
+      
+      /* Navigation styles */
+      nav {
+        background-color: #C8A2C8; /* Lilac */
+      }
+      
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      nav li {
+        margin: 0 10px;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      
+      nav a:hover {
+        color: #006400; /* Dark green */
+      }
+      </style>
+</head>
+
+<body>
+<header>
+    <h1>Kiducation Station</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="learning.html">Learn</a></li>
+        <li><a href="ABC.html">Activities</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sign up.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section class="alphabet">
+        <div class="card-container">
+            <div class="card" id="card">
+                <img src="assets/image/a.jpg" alt="A for Apple">
+                <div class="card-text">
+                    <h1>A for <input type="text" id="answer" placeholder="Type here"></h1>
+                    <button onclick="checkAnswer()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const cards = [
+            { image: 'assets/image/a.jpg', answer: 'Apple' },
+            { image: 'assets/image/b.jpg', answer: 'Ball' },
+            { image: 'assets/image/c.jpg', answer: 'Cat' },
+            { image: 'assets/image/d.jpg', answer: 'Dog' },
+            { image: 'assets/image/e.jpg', answer: 'Elephant' },
+            { image: 'assets/image/f.jpg', answer: 'Fish' },
+            { image: 'assets/image/g.jpg', answer: 'Gorilla' },
+            { image: 'assets/image/h.jpg', answer: 'House' },
+            { image: 'assets/image/i.jpg', answer: 'Insect' },
+            { image: 'assets/image/j.jpg', answer: 'Jump' },
+            { image: 'assets/image/k.jpg', answer: 'Kangaroo' },
+            { image: 'assets/image/l.jpg', answer: 'Lion' },
+            { image: 'assets/image/m.jpg', answer: 'Monkey' },
+            { image: 'assets/image/n.jpg', answer: 'Nest' },
+            { image: 'assets/image/o.jpg', answer: 'Orange' },
+            { image: 'assets/image/p.jpg', answer: 'Penguin' },
+            { image: 'assets/image/q.jpg', answer: 'Queen' },
+            { image: 'assets/image/r.jpg', answer: 'Rabbit' },
+            { image: 'assets/image/s.jpg', answer: 'Spider' },
+            { image: 'assets/image/t.jpg', answer: 'Teddy' },
+            { image: 'assets/image/u.jpg', answer: 'Umbrella' },
+            { image: 'assets/image/v.jpg', answer: 'Violin' },
+            { image: 'assets/image/w.jpg', answer: 'Walrus' },
+            { image: 'assets/image/x.jpg', answer: 'Kisses' },
+            { image: 'assets/image/y.jpg', answer: 'Yoyo' },
+            { image: 'assets/image/z.jpg', answer: 'Zebra' }
+        ];
+        let currentIndex = 0;
+
+        function loadCard(index) {
+            const card = document.getElementById('card');
+            card.querySelector('img').src = cards[index].image;
+            card.querySelector('h1').innerHTML = `${cards[index].answer.charAt(0)} for <input type="text" id="answer" placeholder="Type here">`;
+        }
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value.trim();
+            if (userAnswer.toLowerCase() === cards[currentIndex].answer.toLowerCase()) {
+                const card = document.getElementById('card');
+                card.classList.add('slide-out');
+                card.addEventListener('animationend', () => {
+                    currentIndex++;
+                    if (currentIndex < cards.length) {
+                        card.classList.remove('slide-out');
+                        card.classList.add('slide-in');
+                        loadCard(currentIndex);
+                        card.addEventListener('animationend', () => {
+                            card.classList.remove('slide-in');
+                        }, { once: true });
+                    } else {
+                        Swal.fire({
+                            title: 'Good job!',
+                            text: 'You have completed all the letters!',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                }, { once: true });
+            } else {
+                Swal.fire({
+                    title: 'Wrong answer!',
+                    text: 'Try again.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            }
+        }
+
+        // Load the first card
+        loadCard(currentIndex);
+    </script>
+</body>
+
+</html>

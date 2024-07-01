@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Learning</title>
+    <link rel="stylesheet" href="css/style_ABC.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif; 
+            background-color: #f0f0f0; 
+        }
+        
+        .background-image {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1; 
+        }
+        
+        header {
+            background-color: #C8A2C8; 
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative; 
+            z-index: 1; 
+        }
+        
+        header h1 {
+            height: 50px;
+            margin: 0;
+            justify-content: center;
+            color: #006400; 
+        }
+        
+       
+        nav {
+            background-color: #C8A2C8; 
+            z-index: 1;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 10px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #006400; 
+        }
+        
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff; 
+        }
+        
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .hero .hero-text {
+            z-index: 1;
+        }
+        
+        .card {
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .card h1 {
+            font-size: 2.5em;  
+            margin-bottom: 20px;
+        }
+        
+        .card button {
+            background-color: #006400; 
+            color: #fff; 
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em; 
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .card button:hover {
+            background-color: #004d00; 
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <img src="background/1.png" alt="ABC Learning">
+    </div>
+    <header>
+        <h1>Kiducation Station</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="learning.html">Learn</a></li>
+                <li><a href="ABC.html">Activities</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sign up.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <div class="card">
+                <h1>Let's Learn How To Pronounce ABC</h1>
+                <button onclick="location.href='game_ABC.html'">Play Now</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fun Kids</title>
+    <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-image: url(background/1.png);
+      background-size: cover;
+    }
+    header {
+  background-color: #C8A2C8; /* Lilac */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  height: 50px;
+  margin: 0;
+  justify-content: center;
+  color: #006400;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #C8A2C8; /* Lilac */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #006400; /* Dark green */
+}
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #7b1fa2; /* Purple for main headings */
+        }
+        p {
+            font-size: 1.2em;
+            background-color: #fff3e0; /* Light purple background */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px auto; /* Adjusted margin */
+            max-width: 80%; /* Limiting width for better readability */
+        }
+        p strong {
+            font-weight: bold;
+            color: #4a148c; /* Dark purple text */
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            background-color: #e1bee7; /* Light purple for team member cards */
+            border-radius: 15px;
+            width: calc(20% - 20px); /* Adjusted width to account for margin */
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            position: relative; /* Added position relative for pseudo element */
+        }
+        .team-member:before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: calc(50% - 15px);
+            border-width: 15px 15px 0;
+            border-style: solid;
+            border-color: #e1bee7 transparent transparent;
+            z-index: 1; /* Ensures triangle is behind the card */
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            transition: transform 0.3s;
+        }
+        .team-member img:hover {
+            transform: rotate(360deg);
+        }
+        .team-member h3 {
+            margin-top: 10px;
+        }
+        .team-member p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kiducation Station</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="learning.html">Learn</a></li>
+            <li><a href="ABC.html">Activities</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sign up.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <h1>About Us</h1>
+        <p><strong>Welcome to Fun Kids, where learning meets fun in every click! At Fun Kids, we believe that education is an adventure waiting to be explored. Our mission is to create a captivating online environment where young minds can embark on exciting journeys of discovery, whether they're mastering the ABCs or diving into the world of subtraction.
+        Founded by a passionate team of educators and child development experts, Fun Kids is designed to spark curiosity and ignite a love for learning from an early age. We understand that every child learns differently, so we've crafted our content to be engaging, interactive, and aligned with educational standards.</strong></p>
+        <p><strong>Meet our amazing team:</strong></p>
+        <div class="team">
+            <div class="team-member">
+                <img src="about/img partner 1.jpeg" alt="Dini">
+                <h3>NURDINI BINTI HASMADI</h3>
+                <p>Content Creator</p>
+            </div>
+            <div class="team-member">
+                <img src="about/img partner 2.png" alt="Asyi">
+                <h3>NUR ASYIRAH BINTI CHE NORDIN</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="about/img partner 3.jpg" alt="Athirah">
+                <h3>ATHIRAH SOFIYA BINTI ANNUAR</h3>
+                <p>Project Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="about/img partner 5.jpg" alt="Hadaina">
+                <h3>NUR HADAINA BINTI DZULKAFLI</h3>
+                <p>Graphic Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="about/img partner 4.jpeg" alt="Shahira">
+                <h3> NURUL SHAHIRA BINTI SHAKRI</h3>
+                <p>Quality Assurance </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

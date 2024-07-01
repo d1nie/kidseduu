@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Beginner.xsl"?>
+
+<beginnerlist>
+	<Beginner>
+		<No.>1.</No.>
+		<Name>Alexia Jackson</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>2.</No.>
+		<Name>Benjamin Cruz</Name>
+		<Age>5</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>3.</No.>
+		<Name>Maya Sharma</Name>
+		<Age>4</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>4.</No.>
+		<Name>Penelope Moore</Name>
+		<Age>5</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>5.</No.>
+		<Name>Omar Khan</Name>
+		<Age>4</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>6.</No.>
+		<Name>David Wong</Name>
+		<Age>3</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>7.</No.>
+		<Name>Isabella Garcia</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>8.</No.>
+		<Name>Ethan Miller</Name>
+		<Age>5</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>9.</No.>
+		<Name>Sophia Chen</Name>
+		<Age>6</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>10.</No.>
+		<Name>Liam Davies</Name>
+		<Age>5</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>11.</No.>
+		<Name>Ava Johnson</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>12.</No.>
+		<Name>Noah Patel</Name>
+		<Age>4</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>13.</No.>
+		<Name>Chloe Lee</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>14.</No.>
+		<Name>Michael Brown</Name>
+		<Age>4</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>15.</No.>
+		<Name>Emily Yang</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>16.</No.>
+		<Name>Daniel Kim</Name>
+		<Age>3</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>17.</No.>
+		<Name>Charlotte Lewis</Name>
+		<Age>4</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>18.</No.>
+		<Name>Hannah Lopez</Name>
+		<Age>6</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>19.</No.>
+		<Name>William Thomas</Name>
+		<Age>3</Age>
+		<Gender>Male</Gender>
+	</Beginner>
+	
+	<Beginner>
+		<No.>20.</No.>
+		<Name>Olivia Walker</Name>
+		<Age>3</Age>
+		<Gender>Female</Gender>
+	</Beginner>
+
+</beginnerlist>

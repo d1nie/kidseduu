@@ -1,0 +1,101 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    background-color: #C8A2C8; /* Lilac */
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+nav li {
+    margin: 0 10px;
+  }
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+  
+nav a:hover {
+    color: #006400; /* Dark green */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #030303;
+
+}
+
+.search input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 1900px;
+    height: 1000px;
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 36px;
+    color: #740874;
+    margin: 0 0 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #e3c5e4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

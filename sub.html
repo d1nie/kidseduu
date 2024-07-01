@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtraction Practice</title>
+    <link rel="stylesheet" href="css/style_sub.css">
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <style>
+            body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-image: url(background/1.png);
+      background-size: cover;
+    }
+        header {
+        background-color: #C8A2C8; /* Lilac */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      header h1 {
+  height: 50px;
+  margin: 0;
+  justify-content: center;
+  color: #006400;
+}
+      
+      /* Navigation styles */
+      nav {
+        background-color: #C8A2C8; /* Lilac */
+      }
+      
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      nav li {
+        margin: 0 10px;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      
+      nav a:hover {
+        color: #006400; /* Dark green */
+      }
+      </style>
+</head>
+
+<body>
+<header>
+    <h1>Kiducation Station</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="learning.html">Learn</a></li>
+        <li><a href="ABC.html">Activities</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sign up.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Subtraction Practice</h1>
+            <p>Answer the following subtraction questions:</p>
+            <div class="card">
+                <h2 id="question">Loading...</h2>
+                <input type="number" id="answer" placeholder="Your Answer">
+                <button onclick="checkAnswer()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Your custom JavaScript -->
+    <script>
+        // Array of subtraction questions
+        var questions = [
+            { question: "7 - 3", answer: 4 },
+            { question: "8 - 2", answer: 6 },
+            { question: "5 - 1", answer: 4 },
+            { question: "6 - 4", answer: 2 },
+            { question: "9 - 3", answer: 6 }
+        ];
+
+        // Function to display a random question with animation
+        function displayRandomQuestion() {
+            var randomIndex = Math.floor(Math.random() * questions.length);
+            var questionObj = questions[randomIndex];
+            var card = document.querySelector('.card');
+            card.classList.remove('animate__fadeInUp');
+            void card.offsetWidth; // Trigger reflow to restart animation
+            card.classList.add('animate__fadeInUp');
+            document.getElementById('question').textContent = questionObj.question;
+            document.getElementById('answer').value = ''; // Clear previous answer
+            document.getElementById('answer').focus(); // Focus on input field
+            currentAnswer = questionObj.answer; // Store current answer
+        }
+
+        // Initial display of a question
+        displayRandomQuestion();
+
+        // Function to check user's answer
+        function checkAnswer() {
+            var userAnswer = parseInt(document.getElementById('answer').value);
+            if (userAnswer === currentAnswer) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Correct!',
+                    text: 'Great job!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                displayRandomQuestion(); // Display new question on correct answer
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Wrong answer! Try again.',
+                });
+            }
+        }
+
+        // Handle Enter key press for submitting answer
+        document.getElementById('answer').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                checkAnswer();
+            }
+        });
+    </script>
+</body>
+
+</html>
