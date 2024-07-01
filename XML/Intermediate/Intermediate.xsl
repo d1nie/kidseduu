@@ -5,7 +5,7 @@
  <body>
 	<div style="text-align:center;">
     <h2>INTERMEDIATE</h2>
-    <table border="5" style="margin-left: auto; margin-right: auto;">
+    <table border="5" style="margin-left: 20px; margin-right: auto;">
       <tr bgcolor="#201E1E">
 		<xsl:attribute name="style">
           <xsl:if test="position() = 1">
